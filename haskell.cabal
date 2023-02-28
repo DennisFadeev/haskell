@@ -27,6 +27,7 @@ library
   exposed-modules:
       Arithmetik
       Lib
+      Sort
   other-modules:
       Paths_haskell
   hs-source-dirs:
