@@ -1,6 +1,6 @@
 module Collatz where
     collatz :: Int -> [Int]
-    collatz i = take 10 (iterate next i)
+    collatz i = iterate next i
 
     next n
         | n `mod` 2 == 0 = n `div` 2
