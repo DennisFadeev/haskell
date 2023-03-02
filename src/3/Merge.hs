@@ -11,3 +11,10 @@ module Merge where
 
     primepowers :: Integer -> [Integer]
     primepowers n = foldr merge [] [map (^i) primes | i <- [1..n]]
+
+    data List a = Cons a (List a)
+                    | Empty
+        deriving Show
+
+    customList :: List Integer
+    customList = Cons 1 (Cons 2 (Cons 3 Empty))
